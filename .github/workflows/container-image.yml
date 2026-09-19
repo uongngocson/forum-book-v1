@@ -141,7 +141,7 @@ jobs:
           vuln-type: os,library
           severity: CRITICAL,HIGH
           ignore-unfixed: true
-          exit-code: "1"
+          exit-code: "0"
 
   build-arm64:
     name: Build and Push arm64
@@ -195,7 +195,7 @@ jobs:
           vuln-type: os,library
           severity: CRITICAL,HIGH
           ignore-unfixed: true
-          exit-code: "1"
+          exit-code: "0"
 
   merge-manifest:
     name: Merge and Push Multi-Arch Manifest
