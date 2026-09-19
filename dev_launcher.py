@@ -5,7 +5,7 @@ SERVER_DIR = os.path.join(PROJECT_DIR, "server")
 CLIENT_DIR = os.path.join(PROJECT_DIR, "client")
 
 print("=" * 55)
-print(" 🦊 CÁO SÁCH - TRÌNH KHỞI ĐỘNG LOCAL DEV TỰ ĐỘNG")
+print(" 🎧 READIO - TRÌNH KHỞI ĐỘNG LOCAL DEV TỰ ĐỘNG")
 print("=" * 55)
 
 # 1. Dọn dẹp tiến trình cũ
@@ -66,7 +66,7 @@ try:
     while True:
         time.sleep(1)
 except KeyboardInterrupt:
-    print("\n🛑 Đang tắt toàn bộ tiến trình Cáo Sách...")
+    print("\n🛑 Đang tắt toàn bộ tiến trình Readio...")
     backend_proc.terminate()
     frontend_proc.terminate()
     print("👋 Đã tắt thành công!")

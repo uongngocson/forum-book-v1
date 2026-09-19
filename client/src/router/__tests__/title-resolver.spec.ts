@@ -23,22 +23,22 @@ describe('resolveRouteTitle', () => {
   })
 
   it('uses string route title', () => {
-    expect(resolveRouteTitle(routeWithMeta('Authors'))).toBe('Authors · Cáo Sách')
+    expect(resolveRouteTitle(routeWithMeta('Authors'))).toBe('Authors · Readio')
   })
 
   it('uses function route title', () => {
     const route = routeWithMeta(() => 'Audit Log')
-    expect(resolveRouteTitle(route)).toBe('Audit Log · Cáo Sách')
+    expect(resolveRouteTitle(route)).toBe('Audit Log · Readio')
   })
 
   it('falls back to app title when route title is missing', () => {
-    expect(resolveRouteTitle(routeWithMeta(undefined))).toBe('Cáo Sách')
+    expect(resolveRouteTitle(routeWithMeta(undefined))).toBe('Readio')
   })
 
   it('resolves the account activity admin tab title', () => {
     const route = router.resolve('/settings/admin/account-activity')
 
-    expect(resolveRouteTitle(route as unknown as RouteLocationNormalizedLoaded)).toBe('Account Activity · Cáo Sách')
+    expect(resolveRouteTitle(route as unknown as RouteLocationNormalizedLoaded)).toBe('Account Activity · Readio')
   })
 
   it('refreshes the current route title when the locale changes', async () => {
@@ -53,10 +53,10 @@ describe('resolveRouteTitle', () => {
 
     registerRouteTitleHook(router)
     afterEachHook?.(route)
-    expect(document.title).toBe('Authors · Cáo Sách')
+    expect(document.title).toBe('Authors · Readio')
 
     await setI18nLocale('nl')
     await nextTick()
-    expect(document.title).toBe('Auteurs · Cáo Sách')
+    expect(document.title).toBe('Auteurs · Readio')
   })
 })

@@ -187,10 +187,10 @@ onUnmounted(() => stopLibraryUploadListener())
           class="flex h-9 w-9 shrink-0 items-center justify-center rounded-(--shell-radius) bg-background overflow-hidden ring-1 ring-(--shell-accent-line)"
           aria-hidden="true"
         >
-          <img src="/pwa-64x64.png" alt="Cáo Sách" class="h-7 w-7 object-contain" />
+          <img src="/pwa-64x64.png" alt="Readio" class="h-7 w-7 object-contain" />
         </div>
         <span class="truncate font-serif text-[18px] font-semibold leading-none text-sidebar-foreground group-data-[collapsible=icon]:hidden">
-          Cáo<span class="text-primary"> Sách</span>
+          Read<span class="text-primary">io</span>
         </span>
       </RouterLink>
     </SidebarHeader>

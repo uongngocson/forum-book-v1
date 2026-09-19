@@ -61,7 +61,7 @@ except Exception as e:
     print('Frontend Proxied API check:', e)
 
 print('\n===================================================')
-print(' CAO SACH LOCAL DEV DA SAN SANG!')
+print(' READIO LOCAL DEV DA SAN SANG!')
 print(' -> Truy cap: http://localhost:5173')
 print('===================================================\n')
 sys.stdout.flush()

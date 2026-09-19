@@ -239,7 +239,7 @@ async function handleSubmit() {
 
     <div class="login-card relative z-10 w-full max-w-md rounded-2xl p-8">
       <div class="mb-6 flex flex-col items-center text-center">
-        <img src="/pwa-64x64.png" alt="Cáo Sách" class="w-12 h-12 rounded-xl mb-2 object-contain shadow-sm" />
+        <img src="/pwa-64x64.png" alt="Readio" class="w-12 h-12 rounded-xl mb-2 object-contain shadow-sm" />
         <h1 class="text-xl font-semibold text-foreground">{{ t('auth.register.title') }}</h1>
         <p class="text-sm text-muted-foreground mt-1">{{ t('auth.register.subtitle') }}</p>
       </div>
@@ -334,7 +334,7 @@ async function handleSubmit() {
 <style scoped>
 .login-bg {
   position: relative;
-  background-image: url('/bg-forum-fpt-v1.webp');
+  background-image: url('/bg-readio.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

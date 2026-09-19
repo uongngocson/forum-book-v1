@@ -33,8 +33,8 @@ export default defineConfig({
         'maskable-icon-512x512.png',
       ],
       manifest: {
-        name: 'Cáo Sách',
-        short_name: 'Cáo Sách',
+        name: 'Readio',
+        short_name: 'Readio',
         description: 'Your personal book library and reading space',
         theme_color: '#1e1e18',
         background_color: '#fafaf8',

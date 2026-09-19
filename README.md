@@ -1,13 +1,13 @@
 <div align="center">
 
-# 🦊 Cáo Sách (Sách Cáo)
+# 🎧 Readio
 
 Nền tảng quản lý thư viện và đọc sách tự lưu trữ (self-hosted) dành cho ebooks, PDF, audiobooks và truyện tranh (comics).
 
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL_v3-blue.svg?style=flat-square&color=B461B3)](LICENSE)
 [![Base Project: BookOrbit](https://img.shields.io/badge/Base_Project-BookOrbit-4169E1?style=flat-square)](https://github.com/bookorbit/bookorbit)
 
-![Tổng quan giao diện Cáo Sách](docs/images/dashboard-overview.png)
+![Tổng quan giao diện Readio](docs/images/dashboard-overview.png)
 
 </div>
 
@@ -15,7 +15,7 @@ Nền tảng quản lý thư viện và đọc sách tự lưu trữ (self-hoste
 
 ## Giới thiệu
 
-**Cáo Sách** là nền tảng quản lý thư viện sách cá nhân và đọc sách trực tuyến tự lưu trữ (self-hosted). Dự án hỗ trợ trải nghiệm đọc linh hoạt trên trình duyệt web, thiết bị Kobo hoặc ứng dụng KOReader, với khả năng đồng bộ tiến độ đọc, ghi chú (highlights) và trạng thái đọc đa chiều.
+**Readio** là nền tảng quản lý thư viện sách cá nhân và đọc sách trực tuyến tự lưu trữ (self-hosted). Dự án hỗ trợ trải nghiệm đọc linh hoạt trên trình duyệt web, thiết bị Kobo hoặc ứng dụng KOReader, với khả năng đồng bộ tiến độ đọc, ghi chú (highlights) và trạng thái đọc đa chiều.
 
 Bên cạnh đó, hệ thống tích hợp 14 nhà cung cấp metadata, thống kê chỉ số đọc sách, huy hiệu thành tích, giao thức OPDS, tính năng Send-to-Kindle, phân quyền đa người dùng với OIDC/SSO, và tự động đồng bộ với Hardcover, Readwise, StoryGraph.
 
@@ -49,7 +49,7 @@ Bên cạnh đó, hệ thống tích hợp 14 nhà cung cấp metadata, thống 
 ## 🚀 Khởi động nhanh (Docker)
 
 ```bash
-mkdir caosach && cd caosach
+mkdir readio && cd readio
 mkdir -p books data/app data/postgres
 curl -fsSLo .env https://raw.githubusercontent.com/bookorbit/bookorbit/main/.env.example
 curl -fsSLo docker-compose.yml https://raw.githubusercontent.com/bookorbit/bookorbit/main/docker-compose.yml
@@ -107,7 +107,7 @@ Yêu cầu: **Node.js >= 24**, **pnpm >= 9**, **Docker** (cho PostgreSQL).
 
 Plugin hỗ trợ đồng bộ tiến độ đọc, ghi chú hai chiều và duyệt danh mục trực tiếp từ thiết bị đọc sách:
 
-1. Trên giao diện Cáo Sách, truy cập **Cài đặt > KOReader**, tạo thông tin đăng nhập và chọn **Tải Plugin**.
+1. Trên giao diện Readio, truy cập **Cài đặt > KOReader**, tạo thông tin đăng nhập và chọn **Tải Plugin**.
 2. Giải nén file `bookorbit.koplugin.zip`.
 3. Sao chép thư mục `bookorbit.koplugin` vào đường dẫn `koreader/plugins/` trên thiết bị.
 4. Khởi động lại KOReader và mở một cuốn sách bất kỳ.
@@ -119,7 +119,7 @@ Plugin hỗ trợ đồng bộ tiến độ đọc, ghi chú hai chiều và duy
 
 ### Ghi nhận Tác giả gốc (Credits & Attribution)
 
-Dự án **Cáo Sách** được phát triển và tùy biến dựa trên nền tảng mã nguồn mở xuất sắc **[BookOrbit](https://github.com/bookorbit/bookorbit)** sáng lập bởi **[neonsolstice](https://github.com/neonsolstice)** cùng cộng đồng các nhà phát triển BookOrbit.
+Dự án **Readio** được phát triển và tùy biến dựa trên nền tảng mã nguồn mở xuất sắc **[BookOrbit](https://github.com/bookorbit/bookorbit)** sáng lập bởi **[neonsolstice](https://github.com/neonsolstice)** cùng cộng đồng các nhà phát triển BookOrbit.
 
 Chúng tôi chân thành cảm ơn và ghi nhận những đóng góp to lớn của tác giả gốc và cộng đồng BookOrbit cho cộng đồng mã nguồn mở.
 

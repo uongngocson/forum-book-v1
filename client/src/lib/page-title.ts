@@ -1,4 +1,4 @@
-export const APP_TITLE = 'Cáo Sách'
+export const APP_TITLE = 'Readio'
 
 export function formatPageTitle(leaf: string | null | undefined): string {
   const trimmed = (leaf ?? '').trim()
